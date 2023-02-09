@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { Section, Button } from 'components/FeedbackOptions/FeedBackOptions.styled'
 
-const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+export default function FeedbackOptions ({ options, onLeaveFeedback }) {
 
     return (
         <Section>
@@ -19,4 +19,4 @@ FeedbackOptions.propTypes = {
     onLeaveFeedback: PropTypes.func.isRequired,
 }
 
-export default FeedbackOptions;
+

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {List, ListItem} from 'components/Statistics/Statistics.styled'
 
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+export default function Statistics ({ good, neutral, bad, total, positivePercentage }) {
     return (
         <section>
             <List>
@@ -24,4 +24,5 @@ Statistics.propTypes = {
     positivePercentage: PropTypes.number.isRequired,
 }
 
-export default Statistics;
+
+
